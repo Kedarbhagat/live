@@ -8,16 +8,20 @@ class RoundedInputField extends StatelessWidget {
   final IconData icon;
   final ValueChanged<String> onChanged;
   const RoundedInputField({
-    Key key,
-    this.hintText,
+
+    required this.hintText,
     this.icon = Icons.person,
-    this.onChanged,
+    required this.onChanged,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFieldContainer(
+<<<<<<< HEAD
       key: key,
+=======
+      key: null,
+>>>>>>> f5014f1129e86278d3b0ef860cfd9be866586a99
       child: TextField(
         onChanged: onChanged,
         cursorColor: kPrimaryColor,

@@ -74,9 +74,8 @@ class Body extends StatelessWidget {
 class Background extends StatelessWidget {
   final Widget child;
   const Background({
-    Key key,
-    @required this.child,
-  }) : super(key: key);
+    required this.child,
+  }) ;
 
   @override
   Widget build(BuildContext context) {
@@ -146,9 +145,9 @@ class SocalIcon extends StatelessWidget {
   final String iconSrc;
   final Function press;
   const SocalIcon({
-    Key key,
-    this.iconSrc,
-    this.press,
+    required Key key,
+    required this.iconSrc,
+    required this.press,
   }) : super(key: key);
 
   @override

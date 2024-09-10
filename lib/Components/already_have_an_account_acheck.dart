@@ -6,9 +6,9 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
   final bool login;
   final Function press;
   const AlreadyHaveAnAccountCheck({
-    Key key,
+
     this.login = true,
-    this.press,
+    required this.press,
   }) : super(key: key);
 
   @override
@@ -21,7 +21,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
           style: TextStyle(color: kPrimaryColor),
         ),
         GestureDetector(
-          onTap: press,
+          onTap: (){},
           child: Text(
             login ? "Sign Up" : "Sign In",
             style: TextStyle(

@@ -5,8 +5,8 @@ import 'package:ambulance_tracker/constants.dart';
 class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
   const RoundedPasswordField({
-    Key null,
-    this.onChanged,
+
+    required this.onChanged,
   });
 
   @override
