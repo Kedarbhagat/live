@@ -1,5 +1,5 @@
 
-// @dart=2.9
+
 import 'package:ambulance_tracker/Animation/FadeAnimation.dart';
 import 'package:ambulance_tracker/screens/choice_page.dart';
 import 'package:ambulance_tracker/screens/patient_page.dart';
