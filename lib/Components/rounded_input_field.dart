@@ -12,12 +12,11 @@ class RoundedInputField extends StatelessWidget {
     required this.hintText,
     this.icon = Icons.person,
     required this.onChanged,
-  }) : super(key: key);
+  }) ;
 
   @override
   Widget build(BuildContext context) {
     return TextFieldContainer(
-      key: null,
       child: TextField(
         onChanged: onChanged,
         cursorColor: kPrimaryColor,
