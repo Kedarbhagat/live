@@ -8,12 +8,11 @@ class RoundedPasswordField extends StatelessWidget {
   const RoundedPasswordField({
 
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return TextFieldContainer(
-      key: null,
       child: TextField(
         obscureText: true,
         onChanged: onChanged,
