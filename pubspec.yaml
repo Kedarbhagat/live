@@ -38,6 +38,7 @@ dependencies:
   sliding_switch:
   fluttertoast:
   font_awesome_flutter: ^10.7.0
+  geocoding: ^2.0.0 
 
 dev_dependencies:
   flutter_test:

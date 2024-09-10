@@ -146,7 +146,7 @@ class LoginScreen extends StatelessWidget {
                                   Color.fromRGBO(143, 148, 251, .6),
                                 ])),
                             child: Center(
-                              child: FlatButton(
+                              child: ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
