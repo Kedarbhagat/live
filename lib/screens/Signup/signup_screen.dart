@@ -23,7 +23,6 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
-      key: null,
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -43,7 +42,7 @@ class Body extends StatelessWidget {
             ),
             RoundedInputField(
               hintText: "Your Email",
-              onChanged: (value) {}, key: null,
+              onChanged: (value) {},
             ),
             RoundedPasswordField(
               onChanged: (value) {},
@@ -75,9 +74,8 @@ class Body extends StatelessWidget {
 class Background extends StatelessWidget {
   final Widget child;
   const Background({
-    required Key key,
     required this.child,
-  }) : super(key: key);
+  }) ;
 
   @override
   Widget build(BuildContext context) {
