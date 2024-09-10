@@ -78,7 +78,7 @@ class Background extends StatelessWidget {
   final Widget child;
   const Background({
 
-    @required this.child,
+    required this.child,
   });
 
   @override
