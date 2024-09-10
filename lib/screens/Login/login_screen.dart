@@ -1,6 +1,4 @@
 
-
-import 'package:ambulance_tracker/Animation/FadeAnimation.dart';
 import 'package:ambulance_tracker/screens/choice_page.dart';
 import 'package:ambulance_tracker/screens/patient_page.dart';
 import 'package:flutter/material.dart';
@@ -28,45 +26,41 @@ class LoginScreen extends StatelessWidget {
                         left: 30,
                         width: 80,
                         height: 200,
-                        child: FadeAnimation(
-                            1,
+                        child:
                             Container(
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/light-1.png'))),
-                            )),
+                            ),
                       ),
                       Positioned(
                         left: 140,
                         width: 80,
                         height: 150,
-                        child: FadeAnimation(
-                            1.3,
+                        child:
                             Container(
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/light-2.png'))),
-                            )),
+                            ),
                       ),
                       Positioned(
                         right: 40,
                         top: 40,
                         width: 80,
                         height: 150,
-                        child: FadeAnimation(
-                            1.5,
+                        child:
                             Container(
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: AssetImage(
                                           'assets/images/clock.png'))),
-                            )),
+                            ),
                       ),
                       Positioned(
-                        child: FadeAnimation(
-                            1.6,
+                        child:
                             Container(
                               margin: EdgeInsets.only(top: 50),
                               child: Center(
@@ -78,7 +72,7 @@ class LoginScreen extends StatelessWidget {
                                       fontWeight: FontWeight.bold),
                                 ),
                               ),
-                            )),
+                            ),
                       )
                     ],
                   ),
@@ -87,8 +81,7 @@ class LoginScreen extends StatelessWidget {
                   padding: EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
-                      FadeAnimation(
-                          1.8,
+
                           Container(
                             padding: EdgeInsets.all(5),
                             decoration: BoxDecoration(
@@ -131,12 +124,11 @@ class LoginScreen extends StatelessWidget {
                                 )
                               ],
                             ),
-                          )),
+                          ),
                       SizedBox(
                         height: 30,
                       ),
-                      FadeAnimation(
-                          2,
+
                           Container(
                             height: 50,
                             decoration: BoxDecoration(
@@ -160,17 +152,16 @@ class LoginScreen extends StatelessWidget {
                                         fontWeight: FontWeight.bold),
                                   )),
                             ),
-                          )),
+                          ),
                       SizedBox(
                         height: 70,
                       ),
-                      FadeAnimation(
-                          1.5,
+
                           Text(
                             "Forgot Password?",
                             style: TextStyle(
                                 color: Color.fromRGBO(143, 148, 251, 1)),
-                          )),
+                          ),
                     ],
                   ),
                 )

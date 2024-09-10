@@ -5,8 +5,8 @@ import 'package:ambulance_tracker/constants.dart';
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
   const TextFieldContainer({
-    Key key,
-    this.child,
+    required Key key,
+    required this.child,
   }) : super(key: key);
 
   @override

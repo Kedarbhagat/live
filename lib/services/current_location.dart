@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:location/location.dart';
 import 'package:intl/intl.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geocoding/geocoding.dart';  // Use geocoding for reverse geocoding
+ // Use geocoding for reverse geocoding
 
 late LocationData _currentPosition;
 String _address = "";
@@ -50,16 +50,16 @@ Future<String> getLoc() async {
       _currentPosition.latitude ?? 0.0, _currentPosition.longitude ?? 0.0);
 
   // Reverse geocode to get the address from coordinates
-  await _getAddress(_currentPosition.latitude!, _currentPosition.longitude!)
-      .then((placemarks) {
-    if (placemarks.isNotEmpty) {
-      // Build the address string from placemark data
-      Placemark place = placemarks[0];
-      _address = "${place.street}, ${place.locality}, ${place.country}";
-    } else {
-      _address = "Unknown Location";
-    }
-  });
+  // await _getAddress(_currentPosition.latitude!, _currentPosition.longitude!)
+  //     .then((placemarks) {
+  //   if (placemarks.isNotEmpty) {
+  //     // Build the address string from placemark data
+  //     // Placemark place = placemarks[0];
+  //     // _address = "${place.street}, ${place.locality}, ${place.country}";
+  //   } else {
+  //     _address = "Unknown Location";
+  //   }
+  // });
 
   // Add the location details to the string
   details += "{}";
@@ -72,6 +72,6 @@ Future<String> getLoc() async {
 }
 
 // Function to get address using geocoding package
-Future<List<Placemark>> _getAddress(double lat, double lng) async {
-  List<Placemark> placemarks = await placemarkFromCoordinates(lat, lng);
- 
+// Future<List<Placemark>> _getAddress(double lat, double lng) async {
+//   List<Placemark> placemarks = await placemarkFromCoordinates(lat, lng);
+//

@@ -1,5 +1,4 @@
 
-import 'package:ambulance_tracker/Animation/FadeAnimation.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/Welcome/welcome_screen.dart';
