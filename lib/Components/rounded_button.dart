@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ambulance_tracker/constants.dart';
 
@@ -8,7 +7,7 @@ class RoundedButton extends StatelessWidget {
   final Color color, textColor;
   const RoundedButton({
     Key key,
-    this.text,
+     this.text,
     this.press,
     this.color = kPrimaryColor,
     this.textColor = Colors.white,
@@ -36,9 +35,9 @@ class RoundedButton extends StatelessWidget {
         text,
         style: TextStyle(color: textColor),
       ),
-      onPressed: press,
+      onPressed: (){},
       style: ElevatedButton.styleFrom(
-          primary: color,
+          backgroundColor: color,
           padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
           textStyle: TextStyle(
               color: textColor, fontSize: 14, fontWeight: FontWeight.w500)),
