@@ -9,7 +9,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
 
     this.login = true,
     required this.press,
-  });
+  }) ;
 
   @override
   Widget build(BuildContext context) {

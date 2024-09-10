@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ambulance_tracker/constants.dart';
 
