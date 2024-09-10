@@ -50,7 +50,7 @@ class Body extends StatelessWidget {
                     },
                   ),
                 );
-              },
+              }, key: null,
             ),
             RoundedButton(
               text: "SIGN UP",
